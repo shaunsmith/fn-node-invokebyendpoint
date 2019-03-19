@@ -1,0 +1,18 @@
+{
+  "name": "fn-node-invokebyendpoint",
+  "version": "1.0.0",
+  "description": "How to call an Oracle Function by its invoke endpoint from Node.js.",
+  "main": "invokefunc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shaun Smith",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "http-signature": "^1.2.0",
+    "jssha": "^2.3.1",
+    "sshpk": "^1.16.1",
+    "yamljs": "^0.3.0",
+    "yargs": "^13.2.2"
+  }
+}
