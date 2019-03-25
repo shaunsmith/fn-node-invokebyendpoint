@@ -83,5 +83,6 @@ by its invoke endpoint URL.
 
 The `invokefunc.js` utility is based on the [OCI Node.js request signing
 example](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/signingrequests.htm#NodeJS).
-The only difference this code and the signing example is the addition of code to
-decrypt the private key using a passphrase.  The changes are noted in the code.
+The only difference between this code and the signing example is the addition of
+code to decrypt the private key using a passphrase.  The changes are noted in
+comments in the `sign` function.
