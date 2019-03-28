@@ -92,7 +92,7 @@ function invokeFunction (ctx, functionInvokeURL, body, callback) {
 }
 
 if (!process.argv[2]) {
-  console.log('usage: node ' + process.argv[1] + ' <function invoke endpoint>')
+  console.error('usage: node ' + process.argv[1] + ' <function invoke endpoint>')
   process.exit(-1)
 }
 

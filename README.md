@@ -70,8 +70,16 @@ by its invoke endpoint URL.
    }
    ```
 
-6. You can now invoke the function using the `invokefunc.js` with its endpoint
-   copied from the `fnproject.io/fn/invokeEndpoint` property.  The command syntax is:
+   To get just the invoke endpoint URL, add `--endpoint` to the inspect command:
+
+   `fn inspect f quickstart hello --endpoint`
+
+   Running this command for the example function above, the response would be:
+
+   `https://iagu5qcq6iq.us-phoenix-1.functions.oci.oraclecloud.com/20181201/functions/ocid1.fnfunc.oc1.phx.aaaaaaaaac4lertr6bwpulbgqogsv753afil4zytaazomqxlebdfov2isnoq/actions/invoke`
+
+6. You can now invoke the function using `invokefunc.js` with its endpoint.
+   The command syntax is:
 
    `node invokefunc.js <invoke endpoint url>`
 
@@ -81,7 +89,7 @@ by its invoke endpoint URL.
 
 ## Understanding `invokefunc.js`
 
-The `invokefunc.js` utility is based on the [OCI Node.js request signing
+The `invokefunc.js` example is based on the [OCI Node.js request signing
 example](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/signingrequests.htm#NodeJS).
 The only difference between this code and the signing example is the addition of
 code to decrypt the private key using a passphrase.  The changes are noted in
